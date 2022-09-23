@@ -11,7 +11,7 @@ namespace Lab3
     //
     //------------Lab 3 Notes-------------
     //      Add your classes to the BlackjackClassLibrary project.
-    //      Add the menu code to the Main method.
+    //      Add the menu code to the Main method. 
     //
 
 
