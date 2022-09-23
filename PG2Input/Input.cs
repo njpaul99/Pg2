@@ -36,8 +36,7 @@ namespace PG2Input
                         Console.WriteLine("You Selected: Appointment\n");
                         break;
                     case 3:
-                        return;
-                        break;
+                        return;                   
                 }
                 {
                     Console.Write(" Press any key to continue ");
