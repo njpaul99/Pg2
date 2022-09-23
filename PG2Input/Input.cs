@@ -10,19 +10,16 @@ namespace PG2Input
     {
         static void Main(string[] args)
         {
-            // PART A-2
+          
             int number = Input.ReadInteger("Enter a number from 0 to 10:", 0, 10);            
             Console.WriteLine();
-
-            //.
-
-            // PART A-3
+                      
             string make = string.Empty;
             Input.ReadString("What is the Make of your car?", ref make);
 
             Console.WriteLine();
 
-            // PART A-4
+            
             int myChoice = 0;
 
             string[] tochoose = new string[] { " 1. Consultation", " 2. Appointment", " 3. Walk-In" };
@@ -55,11 +52,11 @@ namespace PG2Input
                 return text;
         }
 
-                //PART B-1
+                
                 string text = GetSpeech();
                 List<string> wordList = new List<string>(words);
                 
-                //PART C-1
+               
                 Dictionary<string, int> dictionary = new Dictionary<string, int>(StringComparer.InvariantCultureIgnoreCase);
 
                 for (int i = 0; i < words.Length; i++)
@@ -74,8 +71,7 @@ namespace PG2Input
                     }
                 }
                 Console.WriteLine();
-                // PART A-5
-
+                
                 int menuChoice = 0;
                 string[] mainMenu = new string[] {"1.The Speech", "2.List of Words", "3.Show Histogram", "4.Search for Word", "5.Remove Word", "6.Exit"};
                 while (menuChoice != mainMenu.Length)
@@ -105,7 +101,7 @@ namespace PG2Input
                             Console.Clear();
                             break;
                         case 3:
-                            //PART C-2
+                            
                             Console.WriteLine("\nYou Selected: Show Histogram");
                             Console.WriteLine();
                             foreach (KeyValuePair<string, int> show in dictionary)
@@ -124,7 +120,7 @@ namespace PG2Input
                             }
                             break;
                         case 4:
-                            //PART C-3
+                            
                             Console.WriteLine("\nYou Selected: Search for Word");
                             string find = "";
                             Input.ReadString("\nWhat word do you want to find? ", ref find);
@@ -142,7 +138,7 @@ namespace PG2Input
                                 Console.ResetColor();
                                 Console.WriteLine(dictionary[find]);
                                 Console.WriteLine();
-                                //PART C- 4
+                                
                                 string[] sentences = text.Split(new char[] {'.', '!', '?', ','});
 
                                 for (int i = 0; i < sentences.Length; i++)
@@ -166,7 +162,7 @@ namespace PG2Input
                             }
                             break;
                         case 5:
-                            //PART C-5
+                            
                             Console.WriteLine("\nYou Selected: Remove Word");
                             string word = "";
                             Input.ReadString("\nEnter the Word to Remove: ", ref word);
